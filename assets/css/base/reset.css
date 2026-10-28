@@ -1,0 +1,10 @@
+/* Small reset: retain native list markers and form semantics. */
+*, *::before, *::after { box-sizing: border-box; }
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote { margin: 0; }
+button, input, select, textarea { font: inherit; }
+button, select { text-transform: none; }
+button, input[type="submit"] { cursor: pointer; }
+img, svg, video { max-width: 100%; height: auto; }
+img, video { display: block; }
+iframe { max-width: 100%; border: 0; }
+[hidden] { display: none !important; }

@@ -1,0 +1,15 @@
+.aligncenter { display: block; margin-inline: auto; }
+.alignleft, .alignright { margin-block-end: var(--spacing-md); }
+.wp-caption { max-width: 100%; }
+.has-text-align-center { text-align: center; }
+.has-text-align-right { text-align: right; }
+.has-text-align-left { text-align: left; }
+@media (min-width: 48rem) {
+    .alignleft { float: left; margin-inline-end: var(--spacing-lg); }
+    .alignright { float: right; margin-inline-start: var(--spacing-lg); }
+}
+/* Break out of the reading column while retaining safe viewport gutters. */
+@media (min-width: 62rem) {
+    .container-sm .alignwide { width: calc(100% + 6rem); max-width: none; margin-inline: -3rem; }
+    .container-sm .alignfull { width: calc(100% + 8rem); max-width: none; margin-inline: -4rem; }
+}

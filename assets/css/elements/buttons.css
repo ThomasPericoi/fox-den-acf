@@ -1,0 +1,44 @@
+/* Base + color + optional size/icon. Compatible with ACF CTA markup. */
+.btn, .wp-element-button, .search-submit, input[type="submit"] {
+    --button-bg: var(--primary);
+    --button-color: var(--white);
+    --button-hover: var(--primary-dark);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    min-height: 2.75rem;
+    max-width: 100%;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border: 1px solid transparent;
+    border-radius: var(--border-radius);
+    background: var(--button-bg);
+    color: var(--button-color);
+    font: 600 1rem/1.3 var(--body);
+    text-align: center;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    cursor: pointer;
+    transition: background-color var(--transition-duration) var(--transition-timing), color var(--transition-duration) var(--transition-timing);
+}
+.btn:hover, .wp-element-button:hover, .search-submit:hover, input[type="submit"]:hover { background: var(--button-hover); color: var(--button-color); }
+.btn-primary { --button-bg: var(--primary); --button-hover: var(--primary-dark); }
+.btn-black { --button-bg: var(--black); --button-hover: #404040; }
+.btn-white { --button-bg: var(--white); --button-color: var(--black); --button-hover: var(--surface-color); border-color: var(--border-color); }
+.btn-outline { --button-bg: transparent; --button-color: var(--primary); --button-hover: var(--primary-light); border-color: currentColor; }
+.btn-sm { min-height: 2.5rem; padding: var(--spacing-xs) var(--spacing-md); font-size: 0.875rem; }
+.btn-lg { min-height: 3.25rem; padding: var(--spacing-md) var(--spacing-xl); }
+.btn-full { width: 100%; }
+.btn-wrapper { display: flex; flex-wrap: wrap; align-items: center; gap: var(--spacing-md); }
+.btn:disabled, .btn[aria-disabled="true"], input[type="submit"]:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn-icon-arrow-right::after {
+    content: "";
+    flex: 0 0 1.125rem;
+    width: 1.125rem;
+    height: 1.125rem;
+    background: currentColor;
+    -webkit-mask: url("../../medias/icons/arrow-right.svg") center / contain no-repeat;
+    mask: url("../../medias/icons/arrow-right.svg") center / contain no-repeat;
+}
+.btn.icon-before::after { order: -1; }
+.btn-image img { width: auto; max-height: 1.5rem; }

@@ -1,0 +1,5 @@
+#main > .archive-loop { padding-top: 0; }
+.pagination { margin-top: var(--spacing-2xl); }
+.pagination .nav-links { display: flex; flex-wrap: wrap; gap: var(--spacing-xs); }
+.page-numbers, .page-links > :where(a, span) { display: inline-flex; align-items: center; justify-content: center; min-width: 2.75rem; min-height: 2.75rem; padding: var(--spacing-xs) var(--spacing-sm); border: 1px solid var(--border-color); border-radius: var(--border-radius); }
+.page-numbers.current, .page-links .current { background: var(--primary); color: var(--white); border-color: var(--primary); }

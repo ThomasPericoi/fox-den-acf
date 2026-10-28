@@ -1,0 +1,8 @@
+.cols-wrapper { display: flex; flex-direction: column; gap: var(--spacing-section-inner); }
+.cols-wrapper > .col { min-width: 0; width: 100%; }
+@media (min-width: 62rem) {
+    .cols-wrapper { flex-direction: row; align-items: flex-start; }
+    .cols-wrapper.reverse { flex-direction: row-reverse; }
+    .cols-wrapper > .col { flex: 1 1 0; }
+    .cols-wrapper > .col-2-3 { flex-grow: 2; }
+}

@@ -1,0 +1,18 @@
+{
+    "apiVersion": 2,
+    "name": "acf/den-button",
+    "title": "Button",
+    "description": "Reusable button",
+    "category": "fox-den",
+    "icon": "admin-links",
+    "textdomain": "fox-den",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "button.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": false,
+        "html": false
+    }
+}

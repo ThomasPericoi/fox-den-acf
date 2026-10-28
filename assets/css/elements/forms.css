@@ -1,0 +1,20 @@
+label { font-weight: 600; }
+:where(input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]):not([type="reset"]):not([type="hidden"]), textarea, select) {
+    width: 100%;
+    max-width: 100%;
+    min-height: 2.75rem;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background: var(--white);
+    color: var(--content-color);
+}
+textarea { min-height: 10rem; resize: vertical; }
+input[type="checkbox"], input[type="radio"] { accent-color: var(--primary); }
+input::placeholder, textarea::placeholder { color: var(--muted-color); opacity: 1; }
+.wpcf7-form > * + * { margin-top: var(--spacing-lg); }
+.wpcf7-form-control-wrap { display: block; margin-top: var(--spacing-xs); }
+.wpcf7-not-valid-tip, [aria-invalid="true"] { color: var(--error-color); }
+[aria-invalid="true"] { border-color: var(--error-color); }
+.search-form { display: flex; flex-wrap: wrap; gap: var(--spacing-sm); }
+.search-form label { flex: 1 1 12rem; }

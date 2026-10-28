@@ -1,0 +1,2 @@
+.error-page { text-align: center; }
+.error-page .container > * + * { margin-top: var(--spacing-lg); }

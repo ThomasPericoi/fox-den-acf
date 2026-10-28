@@ -1,0 +1,4 @@
+figure img { border-radius: var(--border-radius); }
+figcaption, .wp-caption-text { margin-top: var(--spacing-xs); color: var(--muted-color); font-size: 0.875rem; }
+.media { display: block; overflow: hidden; }
+.media img { width: 100%; height: auto; }

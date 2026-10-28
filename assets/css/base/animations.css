@@ -1,0 +1,27 @@
+/* Nothing is hidden until JS has successfully attached an observer. */
+.reveal-pending {
+    opacity: 0;
+    transform: translateY(var(--reveal-distance));
+    transition: opacity var(--reveal-duration) ease-out, transform var(--reveal-duration) ease-out;
+    /* CSS rescue remains effective even if a later script throws. */
+    animation: reveal-safety 1ms 4s forwards;
+}
+.reveal-pending.js-inView, .reveal-pending:focus-within {
+    opacity: 1;
+    transform: none;
+}
+@keyframes reveal-safety { to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-delay: 0ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    .reveal-pending { opacity: 1; transform: none; }
+}
+@media print {
+    .reveal-pending { opacity: 1 !important; transform: none !important; animation: none; }
+    #header, #footer, .skip-link { display: none; }
+}

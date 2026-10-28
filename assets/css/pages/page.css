@@ -1,0 +1,5 @@
+.page-header { padding-block: var(--spacing-section-outer); }
+.page-header .container > * + * { margin-top: var(--spacing-lg); }
+.page-media img { width: 100%; }
+#main > .page-content { padding-top: 0; }
+.page-links { display: flex; flex-wrap: wrap; gap: var(--spacing-sm); margin-top: var(--spacing-xl); }

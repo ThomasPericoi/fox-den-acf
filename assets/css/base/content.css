@@ -1,0 +1,18 @@
+/* Flow spacing keeps native lists, floats and Gutenberg layouts usable. */
+.formatted { overflow-wrap: anywhere; }
+.formatted > * + * { margin-block-start: var(--content-spacing); }
+.formatted :where(h2, h3, h4) { margin-block-start: var(--spacing-2xl); }
+.formatted > :first-child { margin-block-start: 0; }
+.formatted :where(ul, ol) { padding-inline-start: 1.5em; }
+.formatted li + li, .formatted li > :where(ul, ol) { margin-block-start: var(--spacing-xs); }
+.formatted blockquote { padding: var(--spacing-lg); border-inline-start: 3px solid var(--primary); background: var(--surface-color); }
+.formatted blockquote > * + * { margin-block-start: var(--spacing-md); }
+.formatted cite { display: block; font-size: 0.875rem; }
+.formatted :where(pre, .wp-block-table) { max-width: 100%; overflow-x: auto; }
+.formatted pre { padding: var(--spacing-md); background: var(--surface-color); }
+.formatted code { font-family: ui-monospace, monospace; font-size: 0.9em; }
+.formatted table { width: 100%; border-collapse: collapse; }
+.formatted :where(th, td) { padding: var(--spacing-sm); border: 1px solid var(--border-color); text-align: start; }
+.formatted th, .formatted .is-style-stripes tbody tr:nth-child(odd) { background: var(--surface-color); }
+.formatted hr { border: 0; border-top: 1px solid var(--border-color); }
+.formatted::after { content: ""; display: table; clear: both; }

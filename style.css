@@ -1,0 +1,41 @@
+/*
+Theme Name: Fox Den (ACF)
+Theme URI: https://thomaspericoi.com/
+Author: Thomas Pericoi
+Author URI: https://thomaspericoi.com/
+Description: A lightweight WordPress boilerplate built around Advanced Custom Fields, designed to streamline custom theme development with a clean, flexible and reusable foundation.
+Language: en_US
+Version: 1.0.0
+Requires at least: 6.5
+Requires PHP: 8.1
+Text Domain: fox-den
+*/
+
+/* Foundations */
+@import "./assets/css/base/variables.css";
+@import "./assets/css/base/reset.css";
+@import "./assets/css/base/base.css";
+@import "./assets/css/base/typography.css";
+@import "./assets/css/base/content.css";
+@import "./assets/css/base/wordpress.css";
+
+/* Layout and reusable elements */
+@import "./assets/css/elements/containers.css";
+@import "./assets/css/elements/grids.css";
+@import "./assets/css/elements/columns.css";
+@import "./assets/css/elements/buttons.css";
+@import "./assets/css/elements/forms.css";
+@import "./assets/css/elements/medias.css";
+@import "./assets/css/elements/breadcrumbs.css";
+@import "./assets/css/elements/header.css";
+@import "./assets/css/elements/footer.css";
+
+/* Blocks, template parts and base templates */
+@import "./assets/css/blocks/button.css";
+@import "./assets/css/template-parts/item-content.css";
+@import "./assets/css/pages/page.css";
+@import "./assets/css/pages/index.css";
+@import "./assets/css/pages/404.css";
+
+/* Motion and accessibility overrides */
+@import "./assets/css/base/animations.css";
